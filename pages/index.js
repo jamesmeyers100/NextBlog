@@ -1,23 +1,27 @@
 import Layout from '../components/MyLayout.js';
-import blerg from './photo.png';
-// import Link from 'next/link';
-
-function getPosts() {
-  return [
-    { id: 'hello-nextjs', title: 'Hello Next.js' },
-    { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
-  ]
-}
+import MyFace from "../components/Face";
+// import "../style.css"
 
 export default function Index() {
   return (
     <Layout>
-      <h1>James Spoils Everything</h1>
-      <p>WARNING: This website may contain spoilers and other such tidbits that will just generally ruin everything for you.</p>
-      <p>You're welcome!</p>
-      <img src={blerg}/>
-      {/* <img src="assets/photos/photo.jpg" alt="Smiley face" /> */}
+      <div style={{
+        display: "flex",
+        flexDirection: "row",
+      }}>
+
+          <div style={{
+            marginTop: 20,
+            marginRight: 50
+          }}>
+            <MyFace />
+          </div>
+          <div>
+            <p className="warning">WARNING: This website may contain spoilers and </p>
+            <p>other such tidbits that will just generally ruin everything for you.</p>
+            <p>You're welcome!</p>
+          </div>
+        </div>
       <ul>
         <h3>Things I want to do here still</h3>
         <li>Enhance blog page with better use of Blogger API</li>
@@ -25,11 +29,6 @@ export default function Index() {
         <li>Write new blog posts </li>
         <li>link to side projects</li>
       </ul>
-      <style jsx>{`
-        h1 {
-          font-family: 'Garamond';
-        }
-      `}</style>
     </Layout>
   )
 }
