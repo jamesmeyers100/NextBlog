@@ -16,6 +16,10 @@ app
       app.render(req, res, actualPage, queryParams)
     })
 
+    server.get("/About", (req, res) => {
+      app.serveStatic(req, res, path.resolve("./static/development/About"));
+  });
+
     server.get('*', (req, res) => {
       return handle(req, res)
     })

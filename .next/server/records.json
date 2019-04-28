@@ -1,0 +1,32 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "multi private-next-pages/About.js": 0,
+      "multi private-next-pages/Blog.js": 1,
+      "multi private-next-pages/Projects.js": 2,
+      "multi private-next-pages/index.js": 3,
+      "multi private-next-pages/post.js": 4,
+      "multi next/dist/pages/_app": 5,
+      "multi next/dist/pages/_error": 6,
+      "multi next/dist/pages/_document": 7,
+      "multi private-next-pages/about.js": 0,
+      "multi private-next-pages/blog.js": 1,
+      "multi private-next-pages/projects.js": 2
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7
+    }
+  },
+  "chunks": {
+    "byName": {},
+    "bySource": {},
+    "usedIds": []
+  }
+}
