@@ -123,7 +123,7 @@ export default function Blog() {
             <style jsx>{`
         h1,
         a {
-          font-family: 'Arial';
+          font-family: 'Garamond';
         }
 
         ul {
@@ -142,6 +142,10 @@ export default function Blog() {
 
         a:hover {
           opacity: 0.6;
+        }
+
+        h1 {
+
         }
       `}</style>
         </Layout>
