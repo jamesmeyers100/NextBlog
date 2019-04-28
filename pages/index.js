@@ -1,3 +1,39 @@
+import Layout from '../components/MyLayout.js';
+import blerg from './photo.png';
+// import Link from 'next/link';
+
+function getPosts() {
+  return [
+    { id: 'hello-nextjs', title: 'Hello Next.js' },
+    { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
+    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
+  ]
+}
+
+export default function Index() {
+  return (
+    <Layout>
+      <h1>James Spoils Everything</h1>
+      <p>WARNING: This website may contain spoilers and other such tidbits that will just generally ruin everything for you.</p>
+      <p>You're welcome!</p>
+      <img src={blerg}/>
+      {/* <img src="assets/photos/photo.jpg" alt="Smiley face" /> */}
+      <ul>
+        <h3>Things I want to do here still</h3>
+        <li>Enhance blog page with better use of Blogger API</li>
+        <li>Design Overhaul, cuz yikes!</li>
+        <li>Write new blog posts </li>
+        <li>link to side projects</li>
+      </ul>
+      <style jsx>{`
+        h1 {
+          font-family: 'Garamond';
+        }
+      `}</style>
+    </Layout>
+  )
+}
+
 // import Link from 'next/link'
 
 // import Layout from '../components/MyLayout.js'
@@ -94,35 +130,3 @@
 // }
 
 // export default Index
-
-
-import Layout from '../components/MyLayout.js'
-import Link from 'next/link'
-
-function getPosts() {
-  return [
-    { id: 'hello-nextjs', title: 'Hello Next.js' },
-    { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
-  ]
-}
-
-export default function Index() {
-  return (
-    <Layout>
-      <h1>James Meyers' Musings</h1>
-      <ul>
-        <h3>Things I want to do here still</h3>
-        <li>Attach to Blogger API</li>
-        <li>Design Overhaul, cuz yikes!</li>
-        <li>Write blog posts so they appear</li>
-        <li>link to side projects</li>
-      </ul>
-      <style jsx>{`
-        h1 {
-          font-family: 'Garamond';
-        }
-      `}</style>
-    </Layout>
-  )
-}
