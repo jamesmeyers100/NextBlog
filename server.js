@@ -10,15 +10,11 @@ app
   .then(() => {
     const server = express()
 
-    server.get("/posts/:id", (req, res) => {
-      const actualPage = "/post"
+    server.get("/spoilers/:id", (req, res) => {
+      const actualPage = "/spoils"
       const queryParams = { id: req.params.id }
       app.render(req, res, actualPage, queryParams)
     })
-
-    server.get("/About", (req, res) => {
-      app.serveStatic(req, res, path.resolve("./static/development/About"));
-  });
 
     server.get('*', (req, res) => {
       return handle(req, res)

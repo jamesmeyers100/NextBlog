@@ -1,34 +1,34 @@
 import Layout from '../components/MyLayout.js';
 import MyFace from "../components/Face";
-// import "../style.css"
 
+
+const warningStyles = {
+
+}
 export default function Index() {
   return (
     <Layout>
       <div style={{
         display: "flex",
-        flexDirection: "row",
+        flexDirection: "column",
+        justifyContent: "center",
       }}>
-
-          <div style={{
-            marginTop: 20,
-            marginRight: 50
-          }}>
-            <MyFace />
-          </div>
-          <div>
-            <p className="warning">WARNING: This website may contain spoilers and </p>
-            <p>other such tidbits that will just generally ruin everything for you.</p>
-            <p>You're welcome!</p>
-          </div>
+        <div style={{ display: "flex", flexDirection: "column", font: 50, alignItems: "center", margin: 0, }}>
+          <p style={{ alignSelf: "center", color: "red", marginBottom: 0 }}>WARNING:</p>
+          <p>This website may contain spoilers and other such tidbits that will just generally ruin everything for you.</p>
+          <p>You're welcome!</p>
         </div>
-      <ul>
-        <h3>Things I want to do here still</h3>
-        <li>Enhance blog page with better use of Blogger API</li>
-        <li>Design Overhaul, cuz yikes!</li>
-        <li>Write new blog posts </li>
-        <li>link to side projects</li>
-      </ul>
+        <div style={{ alignSelf: "center", border: '1px solid grey', paddingRight: 30, marginTop: 20 }}>
+          <ul style={{listStyleType: "none"}}>
+            <h3 style={{marginLeft: 50}}>Things I Still Want to Add:</h3>
+            <li>Enhance blog page with better use of Blogger API</li>
+            <li>Link some neat APIs for fun</li>
+            <li>Design Overhaul, cuz yikes!</li>
+            <li>Write new and relevant blog posts </li>
+            <li>link to side projects/inspiration</li>
+          </ul>
+        </div>
+      </div>
     </Layout>
   )
 }

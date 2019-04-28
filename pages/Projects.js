@@ -8,9 +8,16 @@ export default function Projects() {
     return (
         <Layout>
             <div style={headerStyle}>
-                <h1>Projects I'm Working On</h1>
-                <p>Soon this is where you'll go to see the other things I'm working on!</p>
+                <h1>Community</h1>
+                <a href="https://thefoodgroupmn.org/"><h2>Food Group</h2></a>
+                <a></a>
             </div>
+            <style jsx>{`
+        a {
+            color: #0d0;
+            text-decoration: none;
+        }
+        `}</style>
         </Layout>
 
     )

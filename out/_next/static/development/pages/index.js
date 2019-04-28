@@ -13,12 +13,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 
-// import myFace from "../static/face.png";
 function Face() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/face.jpg",
     alt: "my image",
-    width: 300
+    width: 200
   });
 }
 
@@ -41,15 +40,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Face__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Face */ "./components/Face.js");
+
 
 
 
 var headerStyle = {
   display: "flex",
-  // backgroundColor: "rebeccapurple",
+  marginTop: 10,
   flexDirection: "column",
-  width: "100%",
-  justifyContent: "center"
+  // width: "100%",
+  justifyContent: "center",
+  alignItems: "center"
 };
 var linkStyle = {
   marginRight: 15
@@ -59,12 +61,19 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: headerStyle,
     className: "jsx-517040713"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Face__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
     style: {
-      alignSelf: "center"
+      alignSelf: "center",
+      marginBottom: 0
     },
     className: "jsx-517040713"
-  }, "James Spoils Everything"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, "James Spoils Everything"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+    style: {
+      alignSelf: "center",
+      marginTop: 0
+    },
+    className: "jsx-517040713"
+  }, "Including your browser's back button. Don't press it."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: {
       alignSelf: "center"
     },
@@ -75,11 +84,11 @@ var Header = function Header() {
     style: linkStyle,
     className: "jsx-517040713"
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/about"
+    href: "/spoilers"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     style: linkStyle,
     className: "jsx-517040713"
-  }, "About")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, "Spoilers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/projects"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     style: linkStyle,
@@ -89,9 +98,14 @@ var Header = function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     style: linkStyle,
     className: "jsx-517040713"
-  }, "Blog"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "Blog")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/contact"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    style: linkStyle,
+    className: "jsx-517040713"
+  }, "Contact"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "517040713"
-  }, "a.jsx-517040713{color:#FFF;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9oYXJkbHlkcml2ZW4vZGV2L3BlcnNvbmFsX3NpdGVzL1BTLU5leHQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0NvQixBQUlRLFdBQUMiLCJmaWxlIjoiL1VzZXJzL2hhcmRseWRyaXZlbi9kZXYvcGVyc29uYWxfc2l0ZXMvUFMtTmV4dC9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gXCJuZXh0L2xpbmtcIjtcblxuY29uc3QgaGVhZGVyU3R5bGUgPSB7XG4gICAgZGlzcGxheTogXCJmbGV4XCIsXG4gICAgLy8gYmFja2dyb3VuZENvbG9yOiBcInJlYmVjY2FwdXJwbGVcIixcbiAgICBmbGV4RGlyZWN0aW9uOiBcImNvbHVtblwiLFxuICAgIHdpZHRoOiBcIjEwMCVcIixcbiAgICBqdXN0aWZ5Q29udGVudDogXCJjZW50ZXJcIlxufVxuXG5jb25zdCBsaW5rU3R5bGUgPSB7XG4gICAgbWFyZ2luUmlnaHQ6IDE1XG5cbn1cblxuXG5jb25zdCBIZWFkZXIgPSAoKSA9PiAoXG4gICAgPGRpdiBzdHlsZT17aGVhZGVyU3R5bGV9PlxuICAgICAgICA8aDEgc3R5bGU9e3sgYWxpZ25TZWxmOiBcImNlbnRlclwiIH19PkphbWVzIFNwb2lscyBFdmVyeXRoaW5nPC9oMT5cbiAgICAgICAgPGRpdiBzdHlsZT17eyBhbGlnblNlbGY6IFwiY2VudGVyXCIgfX0+XG4gICAgICAgICAgICA8TGluayBocmVmPVwiL1wiPlxuICAgICAgICAgICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PkhvbWU8L2E+XG4gICAgICAgICAgICA8L0xpbms+XG5cbiAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvYWJvdXRcIj5cbiAgICAgICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5BYm91dDwvYT5cbiAgICAgICAgICAgIDwvTGluaz5cblxuICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9wcm9qZWN0c1wiPlxuICAgICAgICAgICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PlByb2plY3RzPC9hPlxuICAgICAgICAgICAgPC9MaW5rPlxuXG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2Jsb2dcIj5cbiAgICAgICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5CbG9nPC9hPlxuICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBhIHtcbiAgICAgICAgICAgIGNvbG9yOiAjRkZGXG4gICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuKVxuXG5leHBvcnQgZGVmYXVsdCBIZWFkZXJcbiJdfQ== */\n/*@ sourceURL=/Users/hardlydriven/dev/personal_sites/PS-Next/components/Header.js */"));
+  }, "a{color:#FFF;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9oYXJkbHlkcml2ZW4vZGV2L3BlcnNvbmFsX3NpdGVzL1BTLU5leHQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBNEMyQixBQUlRLFdBQUMiLCJmaWxlIjoiL1VzZXJzL2hhcmRseWRyaXZlbi9kZXYvcGVyc29uYWxfc2l0ZXMvUFMtTmV4dC9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gXCJuZXh0L2xpbmtcIjtcbmltcG9ydCBNeUZhY2UgZnJvbSBcIi4uL2NvbXBvbmVudHMvRmFjZVwiO1xuXG5jb25zdCBoZWFkZXJTdHlsZSA9IHtcbiAgICBkaXNwbGF5OiBcImZsZXhcIixcbiAgICBtYXJnaW5Ub3A6IDEwLFxuICAgIGZsZXhEaXJlY3Rpb246IFwiY29sdW1uXCIsXG4gICAgLy8gd2lkdGg6IFwiMTAwJVwiLFxuICAgIGp1c3RpZnlDb250ZW50OiBcImNlbnRlclwiLFxuICAgIGFsaWduSXRlbXM6IFwiY2VudGVyXCJcbn1cblxuY29uc3QgbGlua1N0eWxlID0ge1xuICAgIG1hcmdpblJpZ2h0OiAxNVxuXG59XG5cblxuY29uc3QgSGVhZGVyID0gKCkgPT4gKFxuICAgIDxkaXYgc3R5bGU9e2hlYWRlclN0eWxlfT5cbiAgICAgICAgPE15RmFjZSAvPlxuICAgICAgICA8aDEgc3R5bGU9e3sgYWxpZ25TZWxmOiBcImNlbnRlclwiLCBtYXJnaW5Cb3R0b206IDAgfX0+SmFtZXMgU3BvaWxzIEV2ZXJ5dGhpbmc8L2gxPlxuICAgICAgICA8cCBzdHlsZT17eyBhbGlnblNlbGY6IFwiY2VudGVyXCIsIG1hcmdpblRvcDogMCB9fT5JbmNsdWRpbmcgeW91ciBicm93c2VyJ3MgYmFjayBidXR0b24uIERvbid0IHByZXNzIGl0LjwvcD5cbiAgICAgICAgPGRpdiBzdHlsZT17eyBhbGlnblNlbGY6IFwiY2VudGVyXCIgfX0+XG4gICAgICAgICAgICA8TGluayBocmVmPVwiL1wiPlxuICAgICAgICAgICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PkhvbWU8L2E+XG4gICAgICAgICAgICA8L0xpbms+XG5cbiAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvc3BvaWxlcnNcIj5cbiAgICAgICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5TcG9pbGVyczwvYT5cbiAgICAgICAgICAgIDwvTGluaz5cblxuICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9wcm9qZWN0c1wiPlxuICAgICAgICAgICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PlByb2plY3RzPC9hPlxuICAgICAgICAgICAgPC9MaW5rPlxuXG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2Jsb2dcIj5cbiAgICAgICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5CbG9nPC9hPlxuICAgICAgICAgICAgPC9MaW5rPlxuXG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2NvbnRhY3RcIj5cbiAgICAgICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5Db250YWN0PC9hPlxuICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgYSB7XG4gICAgICAgICAgICBjb2xvcjogI0ZGRlxuICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbilcblxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyXG4iXX0= */\n/*@ sourceURL=/Users/hardlydriven/dev/personal_sites/PS-Next/components/Header.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -113,18 +127,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var layoutStyle = {
-  // margin: 10,
-  // padding: 20,
-  // border: "1px solid #DDD",
   display: "flex",
   flexDirection: "column",
   background: "lightgrey"
+};
+var innerPageStyle = {
+  display: "flex",
+  flexDirection: "column",
+  background: "white"
 };
 
 var Layout = function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: layoutStyle
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), props.children);
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: innerPageStyle
+  }, props.children));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -10727,22 +10745,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Face__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Face */ "./components/Face.js");
 
 
- // import "../style.css"
 
+var warningStyles = {};
 function Index() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_1__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
-      flexDirection: "row"
+      flexDirection: "column",
+      justifyContent: "center"
     }
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
-      marginTop: 20,
-      marginRight: 50
+      display: "flex",
+      flexDirection: "column",
+      font: 50,
+      alignItems: "center",
+      margin: 0
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Face__WEBPACK_IMPORTED_MODULE_2__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "warning"
-  }, "WARNING: This website may contain spoilers and "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "other such tidbits that will just generally ruin everything for you."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "You're welcome!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Things I want to do here still"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Enhance blog page with better use of Blogger API"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Design Overhaul, cuz yikes!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Write new blog posts "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "link to side projects")));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      alignSelf: "center",
+      color: "red",
+      marginBottom: 0
+    }
+  }, "WARNING:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This website may contain spoilers and other such tidbits that will just generally ruin everything for you."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "You're welcome!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      alignSelf: "center",
+      border: '1px solid grey',
+      paddingRight: 30,
+      marginTop: 20
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    style: {
+      listStyleType: "none"
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    style: {
+      marginLeft: 50
+    }
+  }, "Things I Still Want to Add:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Enhance blog page with better use of Blogger API"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Link some neat APIs for fun"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Design Overhaul, cuz yikes!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Write new and relevant blog posts "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "link to side projects/inspiration")))));
 } // import Link from 'next/link'
 // import Layout from '../components/MyLayout.js'
 // import Header from "../components/Header"
@@ -10825,7 +10866,7 @@ function Index() {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fhardlydriven%2Fdev%2Fpersonal_sites%2FPS-Next%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************************/
@@ -10848,5 +10889,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
