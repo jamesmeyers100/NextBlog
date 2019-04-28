@@ -110,42 +110,17 @@ function getPosts() {
 export default function Blog() {
     return (
         <Layout>
-            <h1>My Blog</h1>
+            <h1>James Meyers' Musings</h1>
             <ul>
-                {getPosts().map(post => (
-                    <li key={post.id}>
-                        <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
-                            <a>{post.title}</a>
-                        </Link>
-                    </li>
-                ))}
+              <h3>Things I want to do here still</h3>
+              <li>Attach to Blogger API</li>
+              <li>Design Overhaul, cuz yikes!</li>
+              <li>Write blog posts so they appear</li>
+              <li>link to side projects</li>
             </ul>
             <style jsx>{`
-        h1,
-        a {
-          font-family: 'Garamond';
-        }
-
-        ul {
-          padding: 0;
-        }
-
-        li {
-          list-style: none;
-          margin: 5px 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        a:hover {
-          opacity: 0.6;
-        }
-
         h1 {
-
+          font-family: 'Garamond';
         }
       `}</style>
         </Layout>

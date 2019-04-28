@@ -21,6 +21,14 @@ const Header = () => (
         <Link href="/about">
             <a style={linkStyle}>About</a>
         </Link>
+
+        <Link href="/projects">
+            <a style={linkStyle}>Projects</a>
+        </Link>
+
+        <Link href="/blog">
+            <a style={linkStyle}>Blog</a>
+        </Link>
         <style jsx>{`
         a {
             color: #FFF
