@@ -68,7 +68,8 @@ var layoutStyle = {
   margin: 20,
   padding: 20,
   border: "1px solid #DDD",
-  display: "flex"
+  display: "flex",
+  flexDirection: "column"
 };
 
 var Layout = function Layout(props) {
