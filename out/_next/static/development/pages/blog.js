@@ -10725,18 +10725,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Index = function Index(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, "Batman TV Shows"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "This will eventually attach to the Blogger Blog"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "This is just an example of initialprops and grabbing from an API"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, props.shows.map(function (show) {
+var Blog = function Blog(props) {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, "Links to Blog Posts"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "Eventually: Links will route to page with post and NOT to Blogger site"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, props.data.items.map(function (item) {
     return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("li", {
-      key: show.id
+      key: item.id
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-      as: "/p/".concat(show.id),
-      href: "/post?id=".concat(show.id)
-    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, show.name)));
+      href: item.url
+    }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("a", null, item.title)));
   })));
 };
 
-Index.getInitialProps =
+Blog.getInitialProps =
 /*#__PURE__*/
 Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
 /*#__PURE__*/
@@ -10747,7 +10746,7 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
       switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()('https://api.tvmaze.com/search/shows?q=batman');
+          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()('https://www.googleapis.com/blogger/v3/blogs/5247624635318920606/posts?key=AIzaSyAednmRa-8f4Cl2qCFaOvpTGqauGyOoKCw');
 
         case 2:
           res = _context.sent;
@@ -10756,11 +10755,9 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
         case 5:
           data = _context.sent;
-          console.log("Show data fetched. Count: ".concat(data.length));
+          console.log("this is getInitialProps to Blogger", data);
           return _context.abrupt("return", {
-            shows: data.map(function (entry) {
-              return entry.show;
-            })
+            data: data
           });
 
         case 8:
@@ -10770,57 +10767,11 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
     }
   }, _callee);
 }));
-/* harmony default export */ __webpack_exports__["default"] = (Index); // import Layout from '../components/MyLayout.js'
-// import Link from 'next/link'
-// function getPosts() {
-//     return [
-//         { id: 'hello-nextjs', title: 'Hello Next.js' },
-//         { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
-//         { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
-//     ]
-// }
-// export default function Blog() {
-//     return (
-//         <Layout>
-//             <h1>James Meyers' Musings</h1>
-//             <ul>
-//                 {getPosts().map(post => (
-//                     <li key={post.id}>
-//                         <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
-//                             <a>{post.title}</a>
-//                         </Link>
-//                     </li>
-//                 ))}
-//             </ul>
-//             <style jsx>{`
-//         h1,
-//         a {
-//           font-family: 'Garamond';
-//         }
-//         ul {
-//           padding: 0;
-//         }
-//         li {
-//           list-style: none;
-//           margin: 5px 0;
-//         }
-//         a {
-//           text-decoration: none;
-//           color: blue;
-//         }
-//         a:hover {
-//           opacity: 0.6;
-//         }
-//         h1 {
-//         }
-//       `}</style>
-//         </Layout>
-//     )
-// }
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fhardlydriven%2Fdev%2Fpersonal_sites%2FPS-Next%2Fpages%2Fblog.js ***!
   \***********************************************************************************************************************************************/
@@ -10843,5 +10794,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map
