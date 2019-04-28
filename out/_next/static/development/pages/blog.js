@@ -19,9 +19,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var headerStyle = {
-  backgroundColor: "rebeccapurple",
-  flexDirection: "row",
-  width: "100%"
+  display: "flex",
+  // backgroundColor: "rebeccapurple",
+  flexDirection: "column",
+  width: "100%",
+  justifyContent: "center"
 };
 var linkStyle = {
   marginRight: 15
@@ -30,6 +32,16 @@ var linkStyle = {
 var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: headerStyle,
+    className: "jsx-517040713"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+    style: {
+      alignSelf: "center"
+    },
+    className: "jsx-517040713"
+  }, "James Spoils Everything"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    style: {
+      alignSelf: "center"
+    },
     className: "jsx-517040713"
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/"
@@ -51,9 +63,9 @@ var Header = function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     style: linkStyle,
     className: "jsx-517040713"
-  }, "Blog")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, "Blog"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "517040713"
-  }, "a.jsx-517040713{color:#FFF;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9oYXJkbHlkcml2ZW4vZGV2L3BlcnNvbmFsX3NpdGVzL1BTLU5leHQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBK0JvQixBQUlRLFdBQUMiLCJmaWxlIjoiL1VzZXJzL2hhcmRseWRyaXZlbi9kZXYvcGVyc29uYWxfc2l0ZXMvUFMtTmV4dC9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gXCJuZXh0L2xpbmtcIjtcblxuY29uc3QgaGVhZGVyU3R5bGUgPSB7XG4gICAgYmFja2dyb3VuZENvbG9yOiBcInJlYmVjY2FwdXJwbGVcIixcbiAgICBmbGV4RGlyZWN0aW9uOiBcInJvd1wiLFxuICAgIHdpZHRoOiBcIjEwMCVcIlxufVxuXG5jb25zdCBsaW5rU3R5bGUgPSB7XG4gICAgbWFyZ2luUmlnaHQ6IDE1XG4gICAgXG59XG5cblxuY29uc3QgSGVhZGVyID0gKCkgPT4gKFxuICAgIDxkaXYgc3R5bGU9e2hlYWRlclN0eWxlfT5cbiAgICAgICAgPExpbmsgaHJlZj1cIi9cIj5cbiAgICAgICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PkhvbWU8L2E+XG4gICAgICAgIDwvTGluaz5cblxuICAgICAgICA8TGluayBocmVmPVwiL2Fib3V0XCI+XG4gICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5BYm91dDwvYT5cbiAgICAgICAgPC9MaW5rPlxuXG4gICAgICAgIDxMaW5rIGhyZWY9XCIvcHJvamVjdHNcIj5cbiAgICAgICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PlByb2plY3RzPC9hPlxuICAgICAgICA8L0xpbms+XG5cbiAgICAgICAgPExpbmsgaHJlZj1cIi9ibG9nXCI+XG4gICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5CbG9nPC9hPlxuICAgICAgICA8L0xpbms+XG4gICAgICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgICAgYSB7XG4gICAgICAgICAgICBjb2xvcjogI0ZGRlxuICAgICAgICB9XG4gICAgICAgIGB9PC9zdHlsZT5cbiAgICA8L2Rpdj5cbilcblxuZXhwb3J0IGRlZmF1bHQgSGVhZGVyXG4iXX0= */\n/*@ sourceURL=/Users/hardlydriven/dev/personal_sites/PS-Next/components/Header.js */"));
+  }, "a.jsx-517040713{color:#FFF;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9oYXJkbHlkcml2ZW4vZGV2L3BlcnNvbmFsX3NpdGVzL1BTLU5leHQvY29tcG9uZW50cy9IZWFkZXIuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBb0NvQixBQUlRLFdBQUMiLCJmaWxlIjoiL1VzZXJzL2hhcmRseWRyaXZlbi9kZXYvcGVyc29uYWxfc2l0ZXMvUFMtTmV4dC9jb21wb25lbnRzL0hlYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBMaW5rIGZyb20gXCJuZXh0L2xpbmtcIjtcblxuY29uc3QgaGVhZGVyU3R5bGUgPSB7XG4gICAgZGlzcGxheTogXCJmbGV4XCIsXG4gICAgLy8gYmFja2dyb3VuZENvbG9yOiBcInJlYmVjY2FwdXJwbGVcIixcbiAgICBmbGV4RGlyZWN0aW9uOiBcImNvbHVtblwiLFxuICAgIHdpZHRoOiBcIjEwMCVcIixcbiAgICBqdXN0aWZ5Q29udGVudDogXCJjZW50ZXJcIlxufVxuXG5jb25zdCBsaW5rU3R5bGUgPSB7XG4gICAgbWFyZ2luUmlnaHQ6IDE1XG5cbn1cblxuXG5jb25zdCBIZWFkZXIgPSAoKSA9PiAoXG4gICAgPGRpdiBzdHlsZT17aGVhZGVyU3R5bGV9PlxuICAgICAgICA8aDEgc3R5bGU9e3sgYWxpZ25TZWxmOiBcImNlbnRlclwiIH19PkphbWVzIFNwb2lscyBFdmVyeXRoaW5nPC9oMT5cbiAgICAgICAgPGRpdiBzdHlsZT17eyBhbGlnblNlbGY6IFwiY2VudGVyXCIgfX0+XG4gICAgICAgICAgICA8TGluayBocmVmPVwiL1wiPlxuICAgICAgICAgICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PkhvbWU8L2E+XG4gICAgICAgICAgICA8L0xpbms+XG5cbiAgICAgICAgICAgIDxMaW5rIGhyZWY9XCIvYWJvdXRcIj5cbiAgICAgICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5BYm91dDwvYT5cbiAgICAgICAgICAgIDwvTGluaz5cblxuICAgICAgICAgICAgPExpbmsgaHJlZj1cIi9wcm9qZWN0c1wiPlxuICAgICAgICAgICAgICAgIDxhIHN0eWxlPXtsaW5rU3R5bGV9PlByb2plY3RzPC9hPlxuICAgICAgICAgICAgPC9MaW5rPlxuXG4gICAgICAgICAgICA8TGluayBocmVmPVwiL2Jsb2dcIj5cbiAgICAgICAgICAgICAgICA8YSBzdHlsZT17bGlua1N0eWxlfT5CbG9nPC9hPlxuICAgICAgICAgICAgPC9MaW5rPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPHN0eWxlIGpzeD57YFxuICAgICAgICBhIHtcbiAgICAgICAgICAgIGNvbG9yOiAjRkZGXG4gICAgICAgIH1cbiAgICAgICAgYH08L3N0eWxlPlxuICAgIDwvZGl2PlxuKVxuXG5leHBvcnQgZGVmYXVsdCBIZWFkZXJcbiJdfQ== */\n/*@ sourceURL=/Users/hardlydriven/dev/personal_sites/PS-Next/components/Header.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -75,11 +87,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: "1px solid #DDD",
+  // margin: 10,
+  // padding: 20,
+  // border: "1px solid #DDD",
   display: "flex",
-  flexDirection: "column"
+  flexDirection: "column",
+  background: "lightgrey"
 };
 
 var Layout = function Layout(props) {
@@ -10723,7 +10736,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+ // async function getMarkup(){
+//   const res = await fetch('https://www.googleapis.com/blogger/v3/blogs/5247624635318920606/posts?key=AIzaSyAednmRa-8f4Cl2qCFaOvpTGqauGyOoKCw');
+//   const data = await res.json()
+//   const blogPostTest =  `${data.items[0].content}`
+//   return {__html: blogPostTest};
+// }
 
 var Blog = function Blog(props) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, "Links to Blog Posts"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", null, "Eventually: Links will route to page with post and NOT to Blogger site"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("ul", null, props.data.items.map(function (item) {
