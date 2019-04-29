@@ -4,19 +4,26 @@ import fetch from 'isomorphic-unfetch'
 
 const Blog = (props) => (
   <Layout>
-    <h1>Check Out My [OLD] Blog</h1>
-    <p>Eventually: Links will route to page with post and NOT to Blogger site</p>
-    {/* <div dangerouslySetInnerHTML={getMarkup()}></div> */}
-    {/* <p>{JSON.stringify(props.data.items[0].url)}</p> */}
-    <ul>
-      {props.data.items.map(item => (
-        <li key={item.id}>
-          <Link href={item.url}>
-            <a>{item.title}</a>
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div style={{alignSelf: "center", flex: 1}}>
+
+      <div>
+        <h1>Check Out My [OLD] Blog</h1>
+        <p>Eventually: Links will route to page with post and NOT to Blogger site</p>
+      </div>
+      {/* <div dangerouslySetInnerHTML={getMarkup()}></div> */}
+      {/* <p>{JSON.stringify(props.data.items[0].url)}</p> */}
+      <div>
+        <ul>
+          {props.data.items.map(item => (
+            <li key={item.id}>
+              <Link href={item.url}>
+                <a>{item.title}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
     <style jsx>{`
         a {
             color: purple;

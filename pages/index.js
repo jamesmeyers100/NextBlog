@@ -20,7 +20,7 @@ export default function Index() {
         </div>
         <div style={{ alignSelf: "center", border: '1px solid grey', paddingRight: 30, marginTop: 20 }}>
           <ul style={{listStyleType: "none"}}>
-            <h3 style={{marginLeft: 50}}>Things I Still Want to Add:</h3>
+            <h3 style={{marginLeft: 50}}>Things I Still Want to:</h3>
             <li>Enhance blog page with better use of Blogger API</li>
             <li>Link some neat APIs for fun</li>
             <li>Design Overhaul, cuz yikes!</li>

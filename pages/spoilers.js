@@ -17,9 +17,9 @@ export default function Spoilers() {
 
       <h1>Spoilers</h1>
       <ul style={{listStyleType: "none"}}>
-        <Spoils title="Harry Potter" source="DUMBLEDORE, DOBBY, AND SIRIUS ALL DIE!"/>
+        <Spoils title="Harry Potter" source="DUMBLEDORE, DOBBY, AND SIRIUS (and a few others) ALL DIE (too)!"/>
         <Spoils title="Game of Thrones" source="EVERYONE SLEEPS WITH EVERYONE ELSE AND THEY ALL DIE!"/>
-        <Spoils title="Waiting for Godot" source="Godot never comes. Only one guys dies."/>
+        <Spoils title="Waiting for Godot" source="GODOT NEVER COMES! Only one guys dies."/>
       </ul>
       </body>
     </Layout>

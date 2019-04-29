@@ -19,7 +19,7 @@ const linkStyle = {
 const Header = () => (
     <div style={headerStyle}>
         <MyFace />
-        <h1 style={{ alignSelf: "center", marginBottom: 0 }}>James Spoils Everything</h1>
+        <h1 style={{ alignSelf: "center", marginBottom: 0 }}>James Spoils All the Things</h1>
         <p style={{ alignSelf: "center", marginTop: 0 }}>Including your browser's back button. Don't press it.</p>
         <div style={{ alignSelf: "center" }}>
             <Link href="/">
